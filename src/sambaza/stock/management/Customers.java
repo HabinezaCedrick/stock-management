@@ -211,7 +211,7 @@ public class Customers extends javax.swing.JFrame {
         String  ProductName =  t2.getSelectedItem().toString().trim();
         int Price = Integer.parseInt(t3.getText());
         int Quantity = Integer.parseInt(t4.getText());
-    int Amount = Price*Quantity;
+        int Amount = Price*Quantity;
         
            
         String InsertQuery = "insert into customer (CustomerName,ProductName,Price,Quantity,Amount) VALUES ('"+CustomerName+"','"+ProductName+"','"+Price+"','"+Quantity+"','"+Amount+"')";
